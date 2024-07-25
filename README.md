@@ -1,3 +1,3 @@
-# `@getcommunity/eslint-config`
+# `@getcommunity/config-eslint`
 
-Collection of internal eslint configurations.
+Collection of internal [ESLint](https://eslint.org/) configurations.
