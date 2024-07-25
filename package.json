@@ -1,0 +1,57 @@
+{
+  "name": "@getcommunity/config-eslint",
+  "description": "",
+  "version": "0.0.0",
+  "author": "",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.8"
+  },
+  "exports": {
+    "./library.js": {
+      "import": "./library.js",
+      "require": "./library.js"
+    },
+    "./solid.js": {
+      "import": "./solid.js",
+      "require": "./solid.js"
+    }
+  },
+  "files": [
+    "library.js",
+    "solid.js"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "main": "./library.js",
+  "module": "./library.js",
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.24.8",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.7.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "9.7.0",
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "eslint-plugin-unused-imports": "^4.0.1",
+    "globals": "^15.8.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getcommunity/config-eslint.git"
+  },
+  "scripts": {
+    "publish-manual": "npm publish"
+  },
+  "source": "./library.js",
+  "type": "module"
+}
