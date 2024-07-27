@@ -1,7 +1,7 @@
 {
   "name": "@getcommunity/config-eslint",
   "description": "",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "",
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.8"
