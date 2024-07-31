@@ -1,16 +1,11 @@
-// @ts-check
-const babelParser = require('@babel/eslint-parser');
+import * as jseslint from '@eslint/js';
+import tsParser from '@typescript-eslint/parser';
+import { ESLint } from 'eslint';
 import { resolve } from 'node:path';
-import process from 'node:process';
-const jseslint = require('@eslint/js');
-const tseslint = require('typescript-eslint');
+import { cwd } from 'node:process';
+import * as tseslint from 'typescript-eslint';
 
-/*
- * This is a custom ESLint configuration for use with
- * typescript packages.
- */
-
-const project = resolve(process.cwd(), 'tsconfig.json');
+const project: string = resolve(cwd(), 'tsconfig.json');
 
 export default tseslint.config(
   jseslint.configs.recommended,
@@ -19,7 +14,7 @@ export default tseslint.config(
   ...tseslint.configs.stylistic,
   {
     languageOptions: {
-      parser: babelParser,
+      parser: tsParser,
       parserOptions: {
         project: project,
         ecmaVersion: 'latest',
@@ -31,8 +26,9 @@ export default tseslint.config(
         NodeJS: true,
       },
     },
+    rules: {},
   },
   {
     ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml'],
   }
-);
+) as ESLint.ConfigData;

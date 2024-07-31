@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "author": "",
   "dependencies": {
-    "@babel/eslint-parser": "^7.24.8",
     "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.7.0",
     "@types/eslint__js": "^8.42.3",
@@ -14,33 +13,35 @@
     "eslint-config-turbo": "^2.0.0",
     "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-only-warn": "^1.1.0",
-    "eslint-plugin-solid": "^0.14.1",
     "globals": "^15.8.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^7.17.0"
   },
   "devDependencies": {
     "@getcommunity/config-prettier": "workspace:*",
+    "@getcommunity/config-typescript": "workspace:*",
+    "eslint-plugin-solid": "^0.14.1",
     "prettier": "^3.3.2"
   },
   "exports": {
     "./library.js": {
       "import": "./src/library.js",
-      "require": "./src/library.js"
+      "require": "./src/library.js",
+      "types": "./src/library.d.ts"
     },
     "./solid.js": {
       "import": "./src/solid.js",
-      "require": "./src/solid.js"
+      "require": "./src/solid.js",
+      "types": "./src/solid.d.ts"
     }
   },
   "files": [
-    "./src/library.js",
-    "./src/solid.js"
+    "dist"
   ],
   "keywords": [],
   "license": "ISC",
-  "main": "./src/library.js",
-  "module": "./src/library.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -50,10 +51,12 @@
     "url": "git+https://github.com/getcommunity/config-eslint.git"
   },
   "scripts": {
+    "build": "tsup",
     "clean": "rm -rf node_modules",
     "format": "prettier --write \"./src/**/*.{js,ts}\"",
+    "preview": "tsup --watch",
     "publish": "npm publish"
   },
-  "source": "./src/library.js",
-  "type": "module"
+  "types": "./dist/index.d.ts",
+  "type": "commonjs"
 }
