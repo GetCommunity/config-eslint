@@ -4,30 +4,32 @@
   "version": "0.0.1",
   "author": "",
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
     "@getcommunity/config-prettier": "workspace:*",
     "@getcommunity/config-typescript": "workspace:*",
+    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-solid": "^0.14.0",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   },
   "peerDependencies": {
     "eslint": ">= 8.56.0"
   },
   "exports": {
     "./library": {
-      "import": "./library.js",
-      "require": "./library.js"
+      "import": "./library.mts"
     },
     "./solid": {
-      "import": "./solid.js",
-      "require": "./solid.js"
+      "import": "./solid.mts"
     }
   },
   "files": [
-    "library.js",
-    "solid.js"
+    "library.mts",
+    "solid.mts"
   ],
   "keywords": [],
   "license": "ISC",
@@ -46,5 +48,5 @@
     "preview": "tsup --watch",
     "publish": "npm publish"
   },
-  "type": "commonjs"
+  "type": "module"
 }
