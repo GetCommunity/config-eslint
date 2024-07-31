@@ -3,24 +3,24 @@
   "description": "",
   "version": "0.0.1",
   "author": "",
-  "devDependencies": {
-    "@eslint/js": "^9.8.0",
+  "dependencies": {
     "@getcommunity/config-prettier": "workspace:*",
     "@getcommunity/config-typescript": "workspace:*",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.4",
+    "tsup": "^8.2.2"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^8.56.0",
     "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-solid": "^0.14.0",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.4",
     "typescript-eslint": "^7.17.0"
   },
-  "peerDependencies": {
-    "eslint": ">= 8.56.0"
-  },
   "exports": {
-    ".": {
+    "./library": {
       "require": "./dist/library.cjs",
       "import": "./dist/library.js",
       "types": "./dist/library.d.ts"
@@ -51,8 +51,5 @@
     "preview": "tsup --watch",
     "publish": "npm publish"
   },
-  "main": "./dist/library.cjs",
-  "module": "./dist/library.js",
-  "type": "module",
-  "types": "./dist/library.d.ts"
+  "type": "module"
 }
