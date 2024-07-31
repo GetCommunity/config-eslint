@@ -24,15 +24,15 @@ export default tseslint.config(
         project: project,
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
-        sourceType: 'module'
+        sourceType: 'module',
       },
       globals: {
         JSX: true,
-        NodeJS: true
-      }
-    }
+        NodeJS: true,
+      },
+    },
   },
   {
-    ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml']
+    ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml'],
   }
 );

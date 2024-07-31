@@ -27,23 +27,23 @@ export default tseslint.config(
         project: project,
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
-        sourceType: 'module'
+        sourceType: 'module',
       },
       globals: {
         JSX: true,
         NodeJS: true,
-        browser: true
-      }
+        browser: true,
+      },
     },
     rules: {
       'no-unused-vars': 'warn',
       'no-undef': 'warn',
       'solid/reactivity': 'warn',
       'solid/no-destructure': 'warn',
-      'solid/jsx-no-undef': 'error'
-    }
+      'solid/jsx-no-undef': 'error',
+    },
   },
   {
-    ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml']
+    ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml'],
   }
 );
