@@ -1,44 +1,20 @@
-import * as jseslint from '@eslint/js';
-import tsParser from '@typescript-eslint/parser';
-import { ESLint } from 'eslint';
-import solidLinter from 'eslint-plugin-solid/configs/recommended';
-import { resolve } from 'node:path';
-import { cwd } from 'node:process';
-import * as tseslint from 'typescript-eslint';
+// @ts-check
 
-const project: string = resolve(cwd(), 'tsconfig.json');
+import eslint from '@eslint/js';
+import { Linter } from '@typescript-eslint/utils/ts-eslint';
+import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
-  jseslint.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
+const gcSolidJsEsConfig: Linter.ConfigType = tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   {
-    files: ['**/*.{ts,tsx,mdx}'],
-    ...solidLinter,
     languageOptions: {
-      parser: tsParser,
       parserOptions: {
-        project: project,
-        ecmaVersion: 'latest',
-        ecmaFeatures: { jsx: true },
-        sourceType: 'module',
-      },
-      globals: {
-        JSX: true,
-        NodeJS: true,
-        browser: true,
+        projectService: true,
+        tsconfigRootDir: process.cwd(),
       },
     },
-    rules: {
-      'no-unused-vars': 'warn',
-      'no-undef': 'warn',
-      'solid/reactivity': 'warn',
-      'solid/no-destructure': 'warn',
-      'solid/jsx-no-undef': 'error',
-    },
-  },
-  {
-    ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml'],
   }
-) as ESLint.ConfigData;
+);
+
+export default gcSolidJsEsConfig;
