@@ -1,9 +1,9 @@
 // @ts-check
-import * as babelParser from '@babel/eslint-parser';
-import jseslint from '@eslint/js';
+const babelParser = require('@babel/eslint-parser');
 import { resolve } from 'node:path';
 import process from 'node:process';
-import tseslint from 'typescript-eslint';
+const jseslint = require('@eslint/js');
+const tseslint = require('typescript-eslint');
 
 /*
  * This is a custom ESLint configuration for use with

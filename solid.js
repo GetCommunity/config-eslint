@@ -1,10 +1,10 @@
 // @ts-check
-import jseslint from '@eslint/js';
-import * as tsParser from '@typescript-eslint/parser';
-import solid from 'eslint-plugin-solid/configs/recommended';
+const jseslint = require('@eslint/js');
+const tsParser = require('@typescript-eslint/parser');
+const solidLinter = require('eslint-plugin-solid/configs/recommended');
 import { resolve } from 'node:path';
 import process from 'node:process';
-import tseslint from 'typescript-eslint';
+const tseslint = require('typescript-eslint');
 
 /*
  * This is a custom ESLint configuration for use with
@@ -20,7 +20,7 @@ export default tseslint.config(
   ...tseslint.configs.stylistic,
   {
     files: ['**/*.{ts,tsx,mdx}'],
-    ...solid,
+    ...solidLinter,
     languageOptions: {
       parser: tsParser,
       parserOptions: {
