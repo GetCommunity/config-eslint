@@ -1,17 +1,12 @@
-// @ts-check
-const jseslint = require('@eslint/js');
-const tsParser = require('@typescript-eslint/parser');
-const solidLinter = require('eslint-plugin-solid/configs/recommended');
+import * as jseslint from '@eslint/js';
+import tsParser from '@typescript-eslint/parser';
+import { ESLint } from 'eslint';
+import solidLinter from 'eslint-plugin-solid/configs/recommended';
 import { resolve } from 'node:path';
-import process from 'node:process';
-const tseslint = require('typescript-eslint');
+import { cwd } from 'node:process';
+import * as tseslint from 'typescript-eslint';
 
-/*
- * This is a custom ESLint configuration for use with
- * typescript packages.
- */
-
-const project = resolve(process.cwd(), 'tsconfig.json');
+const project: string = resolve(cwd(), 'tsconfig.json');
 
 export default tseslint.config(
   jseslint.configs.recommended,
@@ -46,4 +41,4 @@ export default tseslint.config(
   {
     ignores: ['node_modules', 'fonts', '.ideas', 'dist', '.turbo', 'html', 'mjml'],
   }
-);
+) as ESLint.ConfigData;
