@@ -2,7 +2,7 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src/library.ts', 'src/solid.ts'],
-  format: ['cjs', 'esm'], // Build for commonJS and ESmodules
+  format: ['cjs', 'esm'],
   dts: true,
   splitting: false,
   sourcemap: true,

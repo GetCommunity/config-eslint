@@ -20,16 +20,19 @@
     "eslint": ">= 8.56.0"
   },
   "exports": {
-    "./library": {
-      "import": "./library.mts"
+    ".": {
+      "require": "./dist/library.cjs",
+      "import": "./dist/library.js",
+      "types": "./dist/library.d.ts"
     },
     "./solid": {
-      "import": "./solid.mts"
+      "require": "./dist/solid.cjs",
+      "import": "./dist/solid.js",
+      "types": "./dist/solid.d.ts"
     }
   },
   "files": [
-    "library.mts",
-    "solid.mts"
+    "dist/"
   ],
   "keywords": [],
   "license": "ISC",
@@ -48,5 +51,8 @@
     "preview": "tsup --watch",
     "publish": "npm publish"
   },
-  "type": "module"
+  "main": "./dist/library.cjs",
+  "module": "./dist/library.js",
+  "type": "module",
+  "types": "./dist/library.d.ts"
 }
