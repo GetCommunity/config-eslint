@@ -1,8 +1,11 @@
 {
   "name": "@getcommunity/config-eslint",
   "description": "",
-  "version": "0.0.1",
-  "author": "",
+  "version": "0.0.2",
+  "author": "@GetCommunity <ryan@getcommunity.com> (https://github.com/GetCommunity)",
+  "contributors": [
+    "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
+  ],
   "dependencies": {
     "@getcommunity/config-prettier": "workspace:*",
     "@getcommunity/config-typescript": "workspace:*",
