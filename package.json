@@ -10,28 +10,19 @@
     "@getcommunity/config-prettier": "workspace:*",
     "@getcommunity/config-typescript": "workspace:*",
     "prettier": "^3.3.2",
-    "typescript": "^5.5.4",
-    "tsup": "^8.2.2"
-  },
-  "peerDependencies": {
-    "@eslint/js": "^8.56.0",
-    "@types/eslint__js": "^8.42.3",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-solid": "^0.14.0",
-    "typescript-eslint": "^7.17.0"
+    "tsup": "^8.2.2",
+    "typescript": "^5.5.4"
   },
   "exports": {
     "./library": {
-      "require": "./dist/library.cjs",
+      "types": "./dist/library.d.ts",
       "import": "./dist/library.js",
-      "types": "./dist/library.d.ts"
+      "require": "./dist/library.cjs"
     },
     "./solid": {
-      "require": "./dist/solid.cjs",
+      "types": "./dist/solid.d.ts",
       "import": "./dist/solid.js",
-      "types": "./dist/solid.d.ts"
+      "require": "./dist/solid.cjs"
     }
   },
   "files": [
@@ -39,14 +30,20 @@
   ],
   "keywords": [],
   "license": "ISC",
+  "peerDependencies": {
+    "@eslint/js": "9.11.1",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-solid": "^0.14.0",
+    "typescript-eslint": "^7.17.0"
+  },
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/getcommunity/config-eslint.git"
-  },
+  "repository": "getcommunity/config-eslint.git",
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf node_modules",
