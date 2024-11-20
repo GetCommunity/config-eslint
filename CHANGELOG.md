@@ -5,9 +5,6 @@
 ### Patch Changes
 
 - 3f2dafd: updated package dependencies
-
-### Patch Changes
-
 - Updated dependencies [3f2dafd]
   - @getcommunity/config-prettier@0.1.0
   - @getcommunity/config-typescript@0.1.0
