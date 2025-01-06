@@ -1,5 +1,13 @@
 # @getcommunity/config-eslint
 
+## 0.0.5
+
+### Patch Changes
+
+- updated dependencies
+- Updated dependencies
+  - @getcommunity/config-prettier@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
