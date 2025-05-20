@@ -1,14 +1,12 @@
 {
   "name": "@getcommunity/config-eslint",
   "description": "",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "@GetCommunity <ryan@getcommunity.com> (https://github.com/GetCommunity)",
   "contributors": [
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
   ],
   "dependencies": {
-    "@getcommunity/config-prettier": "workspace:*",
-    "@getcommunity/config-typescript": "workspace:*",
     "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
