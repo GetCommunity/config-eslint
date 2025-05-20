@@ -26,8 +26,8 @@
 
 - 3f2dafd: updated package dependencies
 - Updated dependencies [3f2dafd]
-  - @getcommunity/config-prettier@0.1.0
-  - @getcommunity/config-typescript@0.1.0
+  - @getcommunity/config-prettier@0.0.6
+  - @getcommunity/config-typescript@0.0.5
 
 ## 0.0.3
 
