@@ -11,6 +11,9 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
+  "devDependencies": {
+    "@getcommunity/config-typescript": "^0.0.6"
+  },
   "exports": {
     "./library": {
       "types": "./dist/library.d.ts",
@@ -34,8 +37,8 @@
   "keywords": [],
   "license": "ISC",
   "peerDependencies": {
-    "@eslint/js": "^9.26.0",
     "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.15.19",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
