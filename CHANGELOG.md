@@ -2,7 +2,7 @@
 
 ## 0.0.6
 
-### Minor Changes
+### Patch Changes
 
 - expanded packages tools
 
