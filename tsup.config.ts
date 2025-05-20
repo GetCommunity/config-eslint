@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/library.ts', 'src/solid.ts'],
+  entry: ['src/library.ts', 'src/solid.ts', 'src/tailwind.ts'],
   format: ['cjs', 'esm'],
   dts: true,
   splitting: false,

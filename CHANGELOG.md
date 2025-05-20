@@ -1,5 +1,17 @@
 # @getcommunity/config-eslint
 
+## 0.0.6
+
+### Minor Changes
+
+- expanded packages tools
+
+### Patch Changes
+
+- Updated dependencies
+  - @getcommunity/config-prettier@0.0.6
+  - @getcommunity/config-typescript@0.0.5
+
 ## 0.0.5
 
 ### Patch Changes
