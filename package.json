@@ -1,7 +1,7 @@
 {
   "name": "@getcommunity/config-eslint",
   "description": "",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "@GetCommunity <ryan@getcommunity.com> (https://github.com/GetCommunity)",
   "contributors": [
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
@@ -23,6 +23,11 @@
       "types": "./dist/solid.d.ts",
       "import": "./dist/solid.js",
       "require": "./dist/solid.cjs"
+    },
+    "./tailwind": {
+      "types": "./dist/tailwind.d.ts",
+      "import": "./dist/tailwind.js",
+      "require": "./dist/tailwind.cjs"
     }
   },
   "files": [
@@ -31,14 +36,17 @@
   "keywords": [],
   "license": "ISC",
   "peerDependencies": {
-    "@eslint/js": "9.11.1",
+    "@eslint/js": "^9.26.0",
+    "@eslint/eslintrc": "^3.3.1",
     "@types/eslint__js": "^8.42.3",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@typescript-eslint/parser": "^8.15.0",
+    "@types/node": "^22.15.19",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
     "eslint": "^9.15.3",
-    "eslint-plugin-solid": "^0.14.4",
-    "typescript-eslint": "^8.15.0"
+    "eslint-plugin-solid": "^0.14.5",
+    "eslint-plugin-tailwindcss": "^3.18.0"
   },
+  "prettier": "@getcommunity/config-prettier/package.js",
   "private": false,
   "publishConfig": {
     "access": "public"

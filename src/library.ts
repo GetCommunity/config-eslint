@@ -1,17 +1,34 @@
-import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+// @ts-check
 
-const gcLibEsConfig: ReturnType<typeof tseslint.config> = tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
+import { FlatCompat } from "@eslint/eslintrc"
+import eslint from "@eslint/js"
+import tsParser from "@typescript-eslint/parser"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+  recommendedConfig: eslint.configs.recommended,
+  allConfig: eslint.configs.all
+})
+
+const tsLibConfig = [
   {
+    ignores: ["**/*.config.*", "**/*.json"]
+  },
+  ...compat.extends(
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ),
+  {
+    files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: process.cwd(),
-      },
-    },
+      parser: tsParser
+    }
   }
-);
+]
 
-export default gcLibEsConfig;
+export default tsLibConfig

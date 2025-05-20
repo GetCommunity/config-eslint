@@ -4,6 +4,8 @@ import eslint from "@eslint/js"
 import tsParser from "@typescript-eslint/parser"
 import path from "path"
 import { fileURLToPath } from "url"
+// @ts-expect-error - no types for eslint-plugin-tailwindcss
+import tailwindcss from "eslint-plugin-tailwindcss"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -13,27 +15,24 @@ const compat = new FlatCompat({
   allConfig: eslint.configs.all
 })
 
-const tsSolidJsConfig = [
+const tsTailwindConfig = [
   {
     ignores: ["**/*.config.*", "**/*.json", "**/lib/ui/*.tsx"]
   },
-  ...compat.extends(
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:solid/recommended"
-  ),
+  ...compat.extends("plugin:tailwindcss/recommended"),
   {
+    plugins: {
+      tailwindcss
+    },
+    settings: {
+      tailwindcss: {
+        callees: ["cn", "cva"],
+        config: "tailwind.config.cjs"
+      }
+    },
     rules: {
-      "@typescript-eslint/consistent-type-imports": "error",
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          caughtErrorsIgnorePattern: "^_"
-        }
-      ]
+      "tailwindcss/classnames-order": "off",
+      "tailwindcss/no-custom-classname": "off"
     }
   },
   {
@@ -44,4 +43,4 @@ const tsSolidJsConfig = [
   }
 ]
 
-export default tsSolidJsConfig
+export default tsTailwindConfig
