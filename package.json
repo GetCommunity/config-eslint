@@ -7,14 +7,15 @@
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
   ],
   "dependencies": {
-    "prettier": "^3.4.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@getcommunity/config-prettier": "*",
     "@getcommunity/config-typescript": "*",
-    "@types/node": "^24.0.15"
+    "@types/node": "^24.0.15",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.1.0"
   },
   "exports": {
     "./typescript": {
