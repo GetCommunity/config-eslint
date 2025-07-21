@@ -18,6 +18,11 @@
     "prettier-plugin-organize-imports": "^4.1.0"
   },
   "exports": {
+    "./library": {
+      "types": "./dist/library.d.ts",
+      "import": "./dist/library.js",
+      "require": "./dist/library.cjs"
+    },
     "./typescript": {
       "types": "./dist/typescript.d.ts",
       "import": "./dist/typescript.js",

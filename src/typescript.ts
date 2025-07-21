@@ -9,7 +9,7 @@ const compat = new FlatCompat({
   allConfig: eslint.configs.all
 })
 
-const tsTailwindConfig = [
+const tsTypescriptConfig = [
   ...compat.extends(
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -36,4 +36,4 @@ const tsTailwindConfig = [
   }
 ]
 
-export default tsTailwindConfig
+export default tsTypescriptConfig
