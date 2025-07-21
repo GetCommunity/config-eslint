@@ -12,15 +12,15 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@getcommunity/config-typescript": "*",
     "@getcommunity/config-prettier": "*",
+    "@getcommunity/config-typescript": "*",
     "@types/node": "^24.0.15"
   },
   "exports": {
-    "./library": {
-      "types": "./dist/library.d.ts",
-      "import": "./dist/library.js",
-      "require": "./dist/library.cjs"
+    "./typescript": {
+      "types": "./dist/typescript.d.ts",
+      "import": "./dist/typescript.js",
+      "require": "./dist/typescript.cjs"
     },
     "./solid": {
       "types": "./dist/solid.d.ts",

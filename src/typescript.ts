@@ -3,22 +3,31 @@ import { FlatCompat } from "@eslint/eslintrc"
 import eslint from "@eslint/js"
 import tsParser from "@typescript-eslint/parser"
 
-// Use CommonJS globals for compatibility
 const compat = new FlatCompat({
   baseDirectory: __dirname,
   recommendedConfig: eslint.configs.recommended,
   allConfig: eslint.configs.all
 })
 
-const tsLibConfig = [
-  {
-    ignores: ["**/*.config.*", "**/*.json"]
-  },
+const tsTailwindConfig = [
   ...compat.extends(
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ),
+  {
+    rules: {
+      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_"
+        }
+      ]
+    }
+  },
   {
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
@@ -27,4 +36,4 @@ const tsLibConfig = [
   }
 ]
 
-export default tsLibConfig
+export default tsTailwindConfig
