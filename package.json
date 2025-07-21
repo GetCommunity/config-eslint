@@ -62,7 +62,7 @@
     "clean": "rm -rf node_modules",
     "format": "prettier --write \"./src/**/*.{js,ts}\"",
     "preview": "tsup --watch",
-    "publish": "npm publish"
+    "publish-manual": "npm publish"
   },
   "type": "module"
 }
