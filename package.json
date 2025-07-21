@@ -53,7 +53,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "getcommunity/config-eslint.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getcommunity/config-eslint.git"
+  },
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf node_modules",
