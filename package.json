@@ -12,7 +12,8 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@getcommunity/config-typescript": "^0.0.6"
+    "@getcommunity/config-typescript": "^0.0.6",
+    "@types/node": "^24.0.15"
   },
   "exports": {
     "./library": {
