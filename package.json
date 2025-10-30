@@ -11,12 +11,12 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@getcommunity/config-prettier": "^0.0.10",
+    "@getcommunity/config-prettier": "^0.0.11",
     "@getcommunity/config-typescript": "^0.0.10",
     "@types/node": "^22.15.19",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "prettier": "^3.6.2",
-    "prettier-plugin-organize-imports": "^4.1.0"
+    "prettier-plugin-organize-imports": "^4.3.0"
   },
   "exports": {
     "./library": {
