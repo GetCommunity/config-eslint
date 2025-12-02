@@ -7,16 +7,16 @@
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
   ],
   "dependencies": {
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@getcommunity/config-prettier": "^0.0.10",
-    "@getcommunity/config-typescript": "^0.0.10",
-    "@types/node": "^22.15.19",
-    "eslint-plugin-tailwindcss": "^3.18.0",
-    "prettier": "^3.6.2",
-    "prettier-plugin-organize-imports": "^4.1.0"
+    "@getcommunity/config-prettier": "^0.0.12",
+    "@getcommunity/config-typescript": "^0.0.12",
+    "@types/node": "^22.19.1",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "prettier": "^3.7.3",
+    "prettier-plugin-organize-imports": "^4.3.0"
   },
   "exports": {
     "./library": {
