@@ -1,6 +1,7 @@
 import { FlatCompat } from "@eslint/eslintrc"
 import js from "@eslint/js"
 import tsParser from "@typescript-eslint/parser"
+import { Linter } from "eslint"
 // @ts-expect-error - no types for eslint-plugin-tailwindcss
 import tailwindcss from "eslint-plugin-tailwindcss"
 import path from "path"
@@ -14,7 +15,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all
 })
 
-export default [
+const tsSolidTanstackConfig: Linter.Config<Linter.RulesRecord>[] = [
   {
     ignores: ["**/*.config.*", "**/*.json", "**/lib/ui/*.tsx"]
   },
@@ -57,3 +58,5 @@ export default [
     }
   }
 ]
+
+export default tsSolidTanstackConfig
