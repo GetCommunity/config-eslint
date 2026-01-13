@@ -11,8 +11,8 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@getcommunity/config-prettier": "^0.0.12",
-    "@getcommunity/config-typescript": "^0.0.12",
+    "@getcommunity/config-prettier": "^0.0.13",
+    "@getcommunity/config-typescript": "^0.0.13",
     "@types/node": "^22.19.1",
     "eslint-plugin-tailwindcss": "4.0.0-beta.0",
     "prettier": "^3.7.4",
