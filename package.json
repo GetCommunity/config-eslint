@@ -1,7 +1,7 @@
 {
   "name": "@getcommunity/config-eslint",
   "description": "Eslint Config",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "author": "@GetCommunity <ryan@getcommunity.com> (https://github.com/GetCommunity)",
   "contributors": [
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
