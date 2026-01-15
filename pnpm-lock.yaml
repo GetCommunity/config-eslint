@@ -34,8 +34,8 @@ importers:
         version: 5.9.3
     devDependencies:
       '@getcommunity/config-prettier':
-        specifier: ^0.0.14
-        version: 0.0.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier-plugin-tailwindcss@0.6.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier@3.8.0))(prettier@3.8.0)
+        specifier: ^0.0.15
+        version: 0.0.15(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier-plugin-tailwindcss@0.6.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier@3.8.0))(prettier@3.8.0)
       '@getcommunity/config-typescript':
         specifier: ^0.0.13
         version: 0.0.13(@strapi/typescript-utils@5.18.1)(@types/node@22.19.1)(typescript@5.9.3)
@@ -260,8 +260,8 @@ packages:
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@getcommunity/config-prettier@0.0.14':
-    resolution: {integrity: sha512-JjgVFpi5r4pEmXP2+DkUJFSIi8UibFQQQy7n6vU89rQySh/9jAYkdwoS5/sDXuVBTfammUbuYCXN3fVJdMlTHQ==}
+  '@getcommunity/config-prettier@0.0.15':
+    resolution: {integrity: sha512-zLlyfLtcwQW0nCtrsV+8KzXBMHnr+xML4RLIFl0aWkk6MPEP/Vw21oefE5dd5gHKsrr4WBbo3Bt3/Mi/R1XFaQ==}
     peerDependencies:
       prettier: ^3.8.0
       prettier-plugin-organize-imports: ^4.3.0
@@ -1506,7 +1506,7 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@getcommunity/config-prettier@0.0.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier-plugin-tailwindcss@0.6.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier@3.8.0))(prettier@3.8.0)':
+  '@getcommunity/config-prettier@0.0.15(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier-plugin-tailwindcss@0.6.14(prettier-plugin-organize-imports@4.3.0(prettier@3.8.0)(typescript@5.9.3))(prettier@3.8.0))(prettier@3.8.0)':
     dependencies:
       prettier: 3.8.0
       prettier-plugin-organize-imports: 4.3.0(prettier@3.8.0)(typescript@5.9.3)
