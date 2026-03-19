@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@getcommunity/config-prettier": "^0.0.16",
-    "@getcommunity/config-typescript": "^0.0.15",
+    "@getcommunity/config-typescript": "^0.0.17",
     "@types/node": "^24.12.0",
     "eslint-plugin-tailwindcss": "4.0.0-beta.0",
     "prettier": "^3.8.1",
