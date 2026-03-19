@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@getcommunity/config-prettier": "^0.0.16",
-    "@getcommunity/config-typescript": "^0.0.17",
+    "@getcommunity/config-typescript": "^0.0.18",
     "@types/node": "^24.12.0",
     "eslint-plugin-tailwindcss": "4.0.0-beta.0",
     "prettier": "^3.8.1",
@@ -53,7 +53,7 @@
   "peerDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.39.2",
-    "@types/node": "^22.15.19",
+    "@types/node": "^24.12.0",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
     "@typescript-eslint/parser": "^8.32.0",
     "eslint": "^9.15.3",
