@@ -1,4 +1,4 @@
-import { defineConfig } from "tsup"
+import { defineConfig } from "tsdown"
 
 export default defineConfig({
   entry: [
@@ -10,7 +10,8 @@ export default defineConfig({
   ],
   format: ["cjs", "esm"],
   dts: true,
-  splitting: false,
+  // splitting: false,
   sourcemap: true,
-  clean: true
+  clean: true,
+  target: "es2020"
 })

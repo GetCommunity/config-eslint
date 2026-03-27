@@ -7,7 +7,7 @@
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
   ],
   "dependencies": {
-    "tsup": "^8.5.1",
+    "tsdown": "^0.21.6",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
@@ -70,10 +70,10 @@
     "url": "git+https://github.com/getcommunity/config-eslint.git"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "clean": "rm -rf node_modules",
     "format": "prettier --write \"./src/**/*.{js,ts}\"",
-    "preview": "tsup --watch",
+    "preview": "tsdown --watch",
     "publish-manual": "npm publish"
   },
   "type": "module"
