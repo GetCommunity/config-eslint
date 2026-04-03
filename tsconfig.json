@@ -2,5 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@getcommunity/config-typescript/ts-lib.json",
   "include": ["./src/**/*"],
+  "compilerOptions": {
+    "sourceMap": false
+  },
   "exclude": ["dist", "node_modules"]
 }
