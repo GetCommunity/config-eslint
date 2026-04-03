@@ -71,7 +71,7 @@
   },
   "scripts": {
     "build": "tsdown",
-    "clean": "rm -rf node_modules",
+    "clean": "rm -rf node_modules dist .turbo",
     "format": "prettier --write \"./src/**/*.{js,ts}\"",
     "preview": "tsdown --watch",
     "publish-manual": "npm publish"
