@@ -7,13 +7,13 @@
     "Joey Grable <joey@getcommunity.com> (https://joeygrable.com)"
   ],
   "dependencies": {
-    "tsdown": "^0.21.6",
-    "typescript": "^5.9.3"
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
   },
   "devDependencies": {
     "@getcommunity/config-prettier": "^0.0.16",
     "@getcommunity/config-typescript": "^0.0.18",
-    "@types/node": "^24.12.0",
+    "@types/node": "^25.5.2",
     "eslint-plugin-tailwindcss": "4.0.0-beta.0",
     "prettier": "^3.8.1",
     "prettier-plugin-organize-imports": "^4.3.0"
